@@ -1,0 +1,36 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    long int k,sum=0;
+    int testcases,c=0,in=1,tmp,i=0,l=0,op;
+    char str[8];
+    int ar[100],ar3[100];
+    cin >> testcases;
+     while(testcases--){
+        cin >> operations_number;
+        while(operations_number--){
+            cin>>str;
+            if(str[0]=='d'){
+                cin>>k;
+                if(k>=100){
+                    sum+=k;
+                    ar[i++]=sum;
+                    c++;
+                }
+            }
+            if(str[0]=='r')
+                ar3[l++]=i-1;
+        }
+        if(l>0){
+        cout<<"Case "<< in <<": "<<endl;
+            for(i=0; i<l; i++){
+                tmp=ar3[i];
+                cout<<ar[tmp]<<endl;
+            }
+        }
+    }
+    return 0;
+}
