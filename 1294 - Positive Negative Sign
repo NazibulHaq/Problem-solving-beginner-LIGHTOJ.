@@ -1,0 +1,17 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int main()
+{
+    int testcases, i;
+    long long m,n,ans;
+    cin>>testcases;
+    for (i=0; i<testcases;i++)
+    {
+    cin>> n>>m;
+    ans = (n*m) /2;
+    cout << "Case "<< i+1<<": "<< ans << endl;
+    }
+    return 0;
+}
